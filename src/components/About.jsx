@@ -40,12 +40,12 @@ const About = () => {
 
 <div className="relative  h-[95%] border flex justify-center items-center">
     <img
-        src="./public/about_grid.png"
+        src="/about_grid.png"
         alt=""
         className="w-full h-4/5"
     />
     <img
-        src="./public/schiba-qkWOI6b2p5w-unsplash.jpg"
+        src="/schiba-qkWOI6b2p5w-unsplash.jpg"
         alt=""
         className="absolute w-3/4 h-[95%] z-1000 rounded-t-full left-[15%] "
     />

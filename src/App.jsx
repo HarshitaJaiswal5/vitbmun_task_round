@@ -33,7 +33,7 @@ function App() {
     <>
       <Navbar />
       <section>
-        <div className="bg-[url('./public/bg_mun.png')] bg-cover bg-center h-screen relative">
+        <div className="bg-[url('/bg_mun.png')] bg-cover bg-center h-screen relative">
           <img
             src="./public/flag-3158666_1280.jpg"
             alt=""
@@ -63,7 +63,7 @@ function App() {
       {/* Testimonials Section with Auto-Sliding */}
       <h1 className="text-4xl font-semibold text-center pt-20">Testimonials</h1>
       <div className="relative " >
-        <div className="overflow-hidden bg-[url('./public/quotes.png')]  b-contain bg-cover h-96  flex justify-center items-center">
+        <div className="overflow-hidden bg-[url('/quotes.png')]  b-contain bg-cover h-96  flex justify-center items-center">
           <div
             className="flex transition-transform duration-500 ease-in-out   "
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}

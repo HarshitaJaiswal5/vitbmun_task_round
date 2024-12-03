@@ -22,7 +22,7 @@ const Contact = () => {
     setSubmitError("");
 
     try {
-      const response = await fetch("http://localhost:3000/contact", {
+      const response = await fetch("https://server-kic4t1h1t-harshita-jaiswals-projects.vercel.app", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -114,7 +114,7 @@ const Contact = () => {
                       Mobile: +1 (123) 456-7890
                     </p>
                     <p className="">
-                      Mail: support@vgaurd.com
+                      Mail: support@vitbmun.com
                     </p>
                   </div>
                 </li>
