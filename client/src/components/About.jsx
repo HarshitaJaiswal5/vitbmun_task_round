@@ -21,7 +21,7 @@ const About = () => {
        <>
         <div className='h-screen py-12 px-20 gap-24 flex flex-row justify-center items-center'>
 
-<div className='border-black gap-10 flex flex-col w-1/2'>
+<div className='gap-10 flex flex-col w-1/2'>
     <h1 className='text-6xl'>About Us </h1>
     <p>
         Experience the essence of global diplomacy at Vit Bhopal Model United Nations, where every delegate is encouraged to express their perspectives. Guided by a dedicated team, we specialize in simulating real-world UN scenarios, from engaging debates to collaborative resolutions. Our mission goes beyond mere participation; we aim to cultivate informed global citizens who are ready to make a difference. Join us in exploring the complexities of international relations and the importance of dialogue.
