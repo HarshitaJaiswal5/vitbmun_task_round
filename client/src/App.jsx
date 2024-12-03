@@ -35,7 +35,7 @@ function App() {
       <section>
         <div className="bg-[url('/bg_mun.png')] bg-cover bg-center h-screen relative">
           <img
-            src="./public/flag-3158666_1280.jpg"
+            src="/flag-3158666_1280.jpg"
             alt=""
             className="h-4/6 w-1/3 rounded-t-full absolute top-[21%] left-28"
           />
