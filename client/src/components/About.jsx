@@ -38,7 +38,7 @@ const About = () => {
     </div>
 </div>
 
-<div className="relative  h-[95%] border flex justify-center items-center">
+<div className="relative  h-[95%]  flex justify-center items-center">
     <img
         src="/about_grid.png"
         alt=""
