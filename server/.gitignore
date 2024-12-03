@@ -1,0 +1,32 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+/dist/
+/build/
+
+/.env
+/.env.local
+/.env.development
+/.env.production
+
+# Vercel deployment files
+.vercel/
+
+# IDE files
+.vscode/
+.idea/
+
+# MacOS system files
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional: Tailwind CSS output (if you generate specific build files)
+public/
+
+# Optional: If you use .next (Next.js), uncomment the following
+# .next/
