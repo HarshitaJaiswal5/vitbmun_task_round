@@ -22,7 +22,7 @@ const Contact = () => {
     setSubmitError("");
 
     try {
-      const response = await fetch("https://server-kic4t1h1t-harshita-jaiswals-projects.vercel.app", {
+      const response = await fetch("http://vitbmun-task-round-server2.vercel.app/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
