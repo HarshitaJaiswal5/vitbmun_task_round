@@ -37,6 +37,10 @@ app.post('/contact', async (req, res) => {
   const { name, email, message } = req.body;
   const newContact = new Contact({ name, email, message });
 
+  app.get('/', (req, res) => {
+  res.send('Welcome to the Backend Server!');
+});
+
   try {
     await newContact.save();
     res.status(201).json({ message: 'Contact form submitted successfully!', data: newContact });
