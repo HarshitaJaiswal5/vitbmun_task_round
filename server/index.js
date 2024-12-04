@@ -28,6 +28,10 @@ const contactSchema = new mongoose.Schema({
 
 const Contact = mongoose.model('Contact', contactSchema);
 
+  app.get('/', (req, res) => {
+  res.send('Welcome to the Backend Server!');
+});
+
 app.get('/favicon.ico', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'favicon.ico'));
 });
@@ -37,9 +41,7 @@ app.post('/contact', async (req, res) => {
   const { name, email, message } = req.body;
   const newContact = new Contact({ name, email, message });
 
-  app.get('/', (req, res) => {
-  res.send('Welcome to the Backend Server!');
-});
+
 
   try {
     await newContact.save();
