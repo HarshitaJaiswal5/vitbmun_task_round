@@ -26,7 +26,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # Optional: Tailwind CSS output (if you generate specific build files)
-public/
 
 # Optional: If you use .next (Next.js), uncomment the following
 # .next/
