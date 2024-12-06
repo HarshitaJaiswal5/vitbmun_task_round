@@ -6,6 +6,7 @@ import Testimonials from "./components/Testimonials";
 import { useState, useEffect } from "react";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { CarouselOrientation } from "./components/CrouselOrientation";
 
 function App() {
   // Mock testimonial data
@@ -25,8 +26,8 @@ function App() {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 3000); 
-    return () => clearInterval(interval); 
+    const interval = setInterval(nextSlide, 3000);
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -52,13 +53,28 @@ function App() {
               <FontAwesomeIcon icon={faFacebook} />
               <FontAwesomeIcon icon={faTwitter} />
               <FontAwesomeIcon icon={faLinkedin} />
-     
+
             </div>
           </div>
         </div>
       </section>
 
       <About />
+
+
+      <div className="h-screen px-28 flex gap-28 justify-center items-center  ">
+      
+        <div className="w-1/3 text-center h-full py-16">
+          <CarouselOrientation /> 
+        </div>
+        <div className="w-1/2  flex flex-col gap-10 ">
+      <h1 className="text-4xl font-semibold text-center mb-28">Past Glimpses</h1>
+          <h3 className="text-2xl font-semibold">A Walk Through Our Legacy</h3>
+          <div className="text-justify p-5 rounded-lg bg-cyan-300">
+            Over the years, our Model United Nations has stood as a platform where diplomacy meets innovation, fostering an environment of intellectual growth and cultural exchange. From thought-provoking debates on global challenges to impactful agendas addressing pressing international issues, each edition has been a testament to the brilliance and dedication of young minds. Distinguished panels featuring eminent speakers and chairs have provided invaluable insights into real-world policymaking, while the vibrant cultural exchanges have nurtured lifelong friendships across borders.
+          </div>
+        </div>
+      </div>
 
       {/* Testimonials Section with Auto-Sliding */}
       <h1 className="text-4xl font-semibold text-center pt-20">Testimonials</h1>
@@ -87,8 +103,9 @@ function App() {
         </div>
       </div>
       <h1 className="text-6xl font-semibold text-center pt-28">Get in Touch</h1>
-      <Contact/>
-      <Footer/>
+
+      <Contact />
+      <Footer />
     </>
   );
 }
